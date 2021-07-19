@@ -1,4 +1,5 @@
-> ## __Junior JavaScript Developer__
+## __Junior JavaScript Developer__
+
 # Kuritsyn Ivan Nikolaevich
 
 **Date of birth:** 22th November 1982
@@ -12,7 +13,7 @@
 **Address:** city Sochi, Russia
 ___
 ## Summary
-    О себе
+    The goal is to change profession and become a software developer. I took online courses on the platforms Stepik, Hexlet, Skillfactory, RS School. There is no work experience, but there is a great desire to learn and develop in the field of programming and IT technologies.
 ___
 ## Technical Skills
 * **Platforms:**: _Windows, Linux_
@@ -32,5 +33,3 @@ Ivanovo State University of Architecture and Engineering
 
 * Сompleted many advanced training courses in the specialty
 ### English - A2 (Pre-Intermediate)
-
-
