@@ -1,4 +1,4 @@
->## __Junior JavaScript Developer__
+> ## __Junior JavaScript Developer__
 # Kuritsyn Ivan Nikolaevich
 
 **Date of birth:** 22th November 1982
@@ -15,7 +15,7 @@ ___
     О себе
 ___
 ## Technical Skills
-* **Platforms:**: _Windows, Linux, Dos_
+* **Platforms:**: _Windows, Linux_
 
 * **Languages**: _JavaScript, HTML, CSS, Python (basic knowledge)_
 
@@ -23,6 +23,14 @@ ___
 
 * **VSC:** _Git_
 ___
+## Education
+Ivanovo State University of Architecture and Engineering
 
+* Specialty: Civil Engineer
+
+* Honors degree (2005)
+
+* Сompleted many advanced training courses in the specialty
+### English - A2 (Pre-Intermediate)
 
 
