@@ -13,7 +13,10 @@
 **Address:** city Sochi, Russia
 ___
 ## Summary
-    The goal is to change profession and become a software developer. I took online courses on the platforms Stepik, Hexlet, Skillfactory, RS School. There is no work experience, but there is a great desire to learn and develop in the field of programming and IT technologies.
+    The goal is to change profession and become a software developer.
+    I took online courses on the platforms Stepik, Hexlet, Skillfactory, RS School.
+    There is no work experience, but there is a great desire to learn and develop
+    in the field of programming and IT technologies.
 ___
 ## Technical Skills
 * **Platforms:**: _Windows, Linux_
