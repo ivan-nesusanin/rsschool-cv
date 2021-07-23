@@ -1,38 +1,35 @@
 .body {
     width: 70%;
     margin: auto;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', serif;
 }
 
-.header {
-    padding: 100px;
+.container {
+    display: flex;
+}
+
+.right-block {
+    width: 250px;
+    padding: 50px;
     background-color: #95949B;
     color: #2F4F4F;
+
 }
 
-/* .avatar {
-    position: relative;
-    left: 30px;
-} */
-
-.summary {
+.left-block {
     background-color:#DCDCDC;
     color: #2F4F4F;
     padding: 50px;
     padding-top: 20px;
     font-size: 20px;
+
 }
 
-.ts {
+.footer {
     background-color: #2F4F4F;
     color: #DCDCDC;
     padding: 50px;
-    padding-top: 20px;
 }
-
-/* .education {
-    background-color:#312626;
-} */
 
 h1 {
     font-weight: bold;
@@ -43,10 +40,13 @@ h1 {
 }
 
 h2 {
-    font-style: italic;
     letter-spacing: 4px;
+    border-right:5px solid #95949B;
+    border-bottom:5px solid #95949B;
 }
 
 p {
-    font: normal bold 20px/30px Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
 }
