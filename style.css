@@ -1,20 +1,21 @@
-.body {
-    /* width: 1024px; */
-    width: 70%;
+.container {
+    display: flex;
+    width: 1024px;
+    /* width: 70%; */
     margin: auto;
     font-family: 'Times New Roman', serif;
 }
 
-.container {
-    display: flex;
-}
-
 .left-block {
+    display: flex;
+    flex-direction: column;
     background-color:#DCDCDC;
     color: #2F4F4F;
     padding: 50px;
     padding-top: 20px;
     font-size: 20px;
+    border-top: 10px solid #8c8b91;
+    border-left: 10px solid #8c8b91;
 }
 
 .name {
@@ -23,18 +24,70 @@
     border-bottom:5px solid #DCDCDC;
 }
 
-.right-block {
-    width: 250px;
-    padding: 30px;
-    background-color: #95949B;
-    color: #DCDCDC;
+.summary {
+    position: relative;
+    top: 215px;
+}
 
+.summary p {
+    border-left:5px solid #8c8b91;
+    padding: 20px;
+    margin-top: -25px;
+}
+
+.technical_skills {
+    position: relative;
+    top: 215px;
+    line-height: 30px;
+}
+
+.technical_skills ul {
+    border-left:5px solid #8c8b91;
+    padding: 20px 0px 20px 40px;
+    margin-top: -25px;
+    margin-right: -25px;
+}
+
+.right-block {
+    width: 300px;
+    padding: 30px;
+    background-color: #8c8b91;
+    color: #DCDCDC;
+}
+
+.right-block h2 {
+    letter-spacing: 2px;
+    border-left:5px solid #DCDCDC;
+    border-top:5px solid #DCDCDC;
+    border-right: none;
+    border-bottom: none;
+    padding: 20px;
+    text-align: right;
 }
 
 .avatar {
-    margin-top: -30px;
-    margin-left: -30px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
 
+.avatar figcaption{
+    font-size: 20px;
+    text-align: right;
+    margin-right: -40px;
+}
+
+.contacts {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.education {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.education ul {
+    margin-left: -20px;
 }
 
 .footer_contain {
@@ -44,29 +97,40 @@
     padding: 30px 30px 5px;
     justify-content:space-between;
     align-items:center;
+    width: 964px;
+    /* width: 70%; */
+    margin: auto;
+    font-family: 'Times New Roman', serif;
 }
 
 .item-1, .item-2 {
     display: block;
 }
 
-h1 {
-    font-size: 40px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center;
+.item-2 {
+    position: relative;
+    bottom: 10px;
+}
 
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-align: left;
 }
 
 h2 {
+    font-size: 30px;
     letter-spacing: 2px;
-    border-right:5px solid #95949B;
-    border-bottom:5px solid #95949B;
-    padding: 30px;
+    border-right:5px solid #8c8b91;
+    border-bottom:5px solid #8c8b91;
+    padding: 20px;
 }
 
 h3 {
     letter-spacing: 3px;
+    margin-top: -30px;
+    color: #8c8b91
 }
 
 p {
@@ -78,5 +142,6 @@ a {
     color: #DCDCDC;
     display: block;
     height: 30px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
