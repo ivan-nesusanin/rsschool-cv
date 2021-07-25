@@ -19,14 +19,14 @@
 }
 
 .name {
-    padding: 0 30px;
+    padding: 50px 30px 0;
     border-left:5px solid #DCDCDC;
     border-bottom:5px solid #DCDCDC;
 }
 
 .summary {
     position: relative;
-    top: 215px;
+    top: 70px;
 }
 
 .summary p {
@@ -37,8 +37,7 @@
 
 .technical_skills {
     position: relative;
-    top: 215px;
-    line-height: 30px;
+    top: 70px;
 }
 
 .technical_skills ul {
@@ -46,6 +45,17 @@
     padding: 20px 0px 20px 40px;
     margin-top: -25px;
     margin-right: -25px;
+}
+
+.soft_skills {
+    position: relative;
+    top: 70px;
+}
+
+.soft_skills p {
+    border-left:5px solid #8c8b91;
+    padding: 20px;
+    margin-top: -25px;
 }
 
 .right-block {
@@ -87,6 +97,15 @@
 }
 
 .education ul {
+    margin-left: -20px;
+}
+
+.social_media {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.social_media ul {
     margin-left: -20px;
 }
 
@@ -144,4 +163,9 @@ a {
     height: 30px;
     font-size: 20px;
     letter-spacing: 1px;
+}
+
+ul {
+    font-size: 20px;
+    line-height: 30px;
 }
