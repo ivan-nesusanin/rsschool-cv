@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 90px;
   margin: 0 auto;
   background-color: #2F4F4F;
 }
@@ -21,13 +21,12 @@
 .main_menu li {
   padding-right: 50px;
   list-style: none;
-  /* row-gap: 1000px; */
 }
 
 .decorate-link {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-decoration: none;
   color: #DCDCDC;
 }
@@ -59,22 +58,32 @@
   border-bottom:5px solid #DCDCDC;
 }
 
-.summary, .technical_skills, .soft_skills, .code_example {
+.summary, .soft_skills, .code_example, .projects {
   position: relative;
   top: 80px;
 }
 
-.summary p, .soft_skills p, .code_example p {
+.summary p, .soft_skills p, .code_example p, .projects p {
   border-left:5px solid #8c8b91;
   padding: 20px;
   margin-top: -25px;
 }
 
-.technical_skills ul {
-  border-left:5px solid #8c8b91;
-  padding: 20px 0px 20px 40px;
-  margin-top: -25px;
-  margin-right: -25px;
+.code_example a {
+  display: inline-block;
+  color: #2F4F4F;
+}
+
+.projects {
+  position: relative;
+  top: 35px;
+}
+
+.projects_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 420px;
 }
 
 .right-block {
@@ -106,8 +115,8 @@
   margin-right: -40px;
 }
 
-.contacts, .education, .social_media {
-  margin-top: 100px;
+.contacts, .technical_skills, .education, .social_media {
+  margin-top: 70px;
   font-size: 18px;
   line-height: 27px;
 }
@@ -117,7 +126,7 @@
   cursor: pointer;
 }
 
-.education ul, .social_media ul {
+.technical_skills ul, .education ul, .contacts ul, .social_media ul {
   margin-left: -20px;
 }
 
@@ -188,5 +197,14 @@ ul {
 pre {
   width: 820px;
   margin-top: -30px;
-  /* padding-left: 20px; */
+}
+
+span {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+  text-align: justify;
+  color: #2F4F4F;
 }

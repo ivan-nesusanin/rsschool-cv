@@ -7,8 +7,6 @@
     <title>CV Ivan Kuritsyn</title>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 
   </head>
 
@@ -17,11 +15,12 @@
       <nav class="main_menu">
         <ul>
           <li><a class="decorate-link" href="#summary">Summary</a></li>
-          <li><a class="decorate-link" href="#technical_skills">Technical Skills</a></li>
           <li><a class="decorate-link" href="#soft_skills">Soft Skills</a></li>
           <li><a class="decorate-link" href="#code_example">Code Example</a></li>
-          <li><a class="decorate-link" href="#contacts">Contacts</a></li>
+          <li><a class="decorate-link" href="#projects">Projects</a></li>
+          <li><a class="decorate-link" href="#technical_skills">Technical Skills</a></li>
           <li><a class="decorate-link" href="#education">Education</a></li>
+          <li><a class="decorate-link" href="#contacts">Contacts</a></li>
           <li><a class="decorate-link" href="#social_media">Social Media</a></li>
         </ul>
       </nav>
@@ -42,15 +41,6 @@
             develop in the field of programming and IT technologies.
           </p>
         </section>
-        <section class="technical_skills" id="technical_skills">
-          <h2>Technical Skills</h2>
-          <ul>
-            <li><b>Platforms:</b> Windows, Linux (Ubuntu)</li>
-            <li><b>Languages:</b> JavaScript, HTML, CSS, Python (basic knowledge)</li>
-            <li><b>IDE:</b> VS Code, Jupiter Notebook, PyCharm</li>
-            <li><b>VSC:</b> Git</li>
-          </ul>
-        </section>
         <section class="soft_skills" id="soft_skills">
           <h2>Soft Skills</h2>
           <p>
@@ -60,9 +50,10 @@
         </section>
         <section class="code_example" id="code_example">
           <h2>Code Example</h2>
-          <p>Imagine you and your friends decide to create a dream team. This team should have a cool secret name that contains encrypted information about it. For example, the first letters of the names of its members in upper case sorted alphabetically.Implement the createDreamTeam(members) function that returns name of a newly made team (string) based on the names of its members (Array). Names of the members should be strings. In case of wrong members type function must return false. Team member name may contain whitespaces.</p>
+          <p>Task <a href="https://github.com/AlreadyBored/basic-js" target="_blank">Dream team</a></p>
+          <p>Implement the createDreamTeam(members) function that returns name of a newly made team (string) based on the first letters of the names of its members (Array) in upper case sorted alphabetically. Names of the members should be strings. In case of wrong members type function must return false. Team member name may contain whitespaces.</p>
           <pre>
-            <code>
+            <code class="language-css">
 function createDreamTeam(members) {
   if (!Array.isArray(members)) return false;
   let arrName = [];
@@ -71,7 +62,7 @@ function createDreamTeam(members) {
   })
   arrName.sort();
   let dreamTeamName = '';
-  for (let i = 0; i < arrName.length; i++) {
+  for (let i = 0; i &lt arrName.length; i++) {
     if (typeof arrName[i] === 'string') dreamTeamName += arrName[i][0];
   }
   return dreamTeamName;
@@ -79,23 +70,39 @@ function createDreamTeam(members) {
             </code>
           </pre>
         </section>
+        <section class="projects" id="projects">
+          <h2>Projects</h2>
+          <p>I don't have any major work projects at the moment. Below are examples of small training projects: Vertical slider and Custom video player.</p>
+          <div class="projects_container">
+            <a href="https://rolling-scopes-school.github.io/ivan-nesusanin-JSFEPRESCHOOL/js30-vertical-slider" target="_blank">
+              <img src="/Assets/vertical-slider.jpg" alt="Vertical slider" width="405">
+              <span>
+                During the study of JavaScript, a Vertical Slider was made with photos of beautiful places in the vicinity of Krasnaya Polyana. The project was executed in a pure language, without the use of frameworks. The slider is built on flexboxes.
+              </span>
+            </a>
+            <a href="https://rolling-scopes-school.github.io/ivan-nesusanin-JSFEPRESCHOOL/custom-video-player" target="_blank">
+              <img src="/Assets/custom-video-player.jpg" alt="Custom Video Player" width="405">
+              <span>
+                The second project is a Custom Video Player. The project is also executed without the use of frameworks and libraries.
+              </span>
+            </a>
+          </div>
+        </section>
       </div>
 
       <div class="right-block">
         <figure class="avatar">
-          <img src="Avatar.jpg" alt="Photo Kuritsyn Ivan" height="435">
+          <img src="/Assets/Avatar.jpg" alt="Photo Kuritsyn Ivan" height="435">
           <figcaption><b>Date of birth:</b> 22th November 1982</figcaption>
         </figure>
-        <section class="contacts" id="contacts">
-          <h2>Contacts</h2>
+        <section class="technical_skills" id="technical_skills">
+          <h2>Technical Skills</h2>
           <ul>
-            <li><b>Phone number:</b> <a href="tel:+79268185066">+7(926)818-50-66</a></li>
-            <li><b>Email:</b> <a href="mailto:l75x5@yandex.ru">L75x5@yandex.ru</a></li>
-            <li><b>Telegram:</b> <a href="https://t.me/ivan_nesusanin">@ivan_nesusanin</a></li>
-            <li><b>Skype:</b> <a href="skype:ivroller">ivroller</a></li>
-            <li><b>Discord:</b> ivan-nesusanin #4211</li>
+            <li><b>Platforms:</b> Windows, Linux (Ubuntu)</li>
+            <li><b>Languages:</b> JavaScript, HTML5, CSS3, Python (basic)</li>
+            <li><b>IDE:</b> VS Code, Jupiter Notebook, PyCharm</li>
+            <li><b>VSC:</b> Git</li>
           </ul>
-          <p><b>Address:</b> Sochi, Russia</p>
         </section>
         <section class="education" id="education">
           <h2>Education</h2>
@@ -107,18 +114,29 @@ function createDreamTeam(members) {
           </ul>
           <p><b>English - A2</b> (Pre-Intermediate)</p>
         </section>
+        <section class="contacts" id="contacts">
+          <h2>Contacts</h2>
+          <ul>
+            <li><b>Phone number:</b> <a href="tel:+79268185066">+7(926)818-50-66</a></li>
+            <li><b>Email:</b> <a href="mailto:l75x5@yandex.ru">L75x5@yandex.ru</a></li>
+            <li><b>Telegram:</b> <a href="https://t.me/ivan_nesusanin" target="_blank">@ivan_nesusanin</a></li>
+            <li><b>Skype:</b> <a href="skype:ivroller">ivroller</a></li>
+            <li><b>Discord:</b> ivan-nesusanin #4211</li>
+          </ul>
+          <p><b>Address:</b> Sochi, Russia</p>
+        </section>
         <section class="social_media" id="social_media">
           <h2>Social Media</h2>
           <ul>
-            <li><b>Instagram:</b> <a href="https://www.instagram.com/ivan_nesusanin">ivan_nesusanin</a></li>
-            <li><b>VK:</b> <a href="https://vk.com/id7291384">Иван Курицын</a></li>
+            <li><b>Instagram:</b> <a href="https://www.instagram.com/ivan_nesusanin" target="_blank">ivan_nesusanin</a></li>
+            <li><b>VK:</b> <a href="https://vk.com/id7291384" target="_blank">Иван Курицын</a></li>
           </ul>
         </section>
       </div>
     </main>
 
     <footer class="footer">
-      <section class="footer_container">
+      <div class="footer_container">
         <div class="item-1">
           <a href="https://github.com/ivan-nesusanin" target="_blank">Link to GitHub</a>
           <a href="https://rs.school/js/" target="_blank">Link to course RS School</a>
@@ -127,7 +145,46 @@ function createDreamTeam(members) {
         <div class="item-2">
           <img src="https://rs.school/images/rs_school_js.svg" alt="logo RS School" height="50">
         </div>
-      </section>
+      </div>
     </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script> console.log (
+`Общий балл - 135
+
++10 - вёрстка валидная
+Надпись "Document checking completed. No errors or warnings to show."
+
++20 - вёрстка семантическая
+В коде страницы присутствуют семантические теги HTML5: figure, figcaption, footer, header, main, nav, section. Используются заголовки h1-h3. Заголовок h1 только один. 2 балла за каждый уникальный семантический тег HTML5 и за каждый уникальный заголовок h1-h3
+
++10 - для оформления СV используются css-стили
+1 балл за каждый стилизованный элемент, но не больше 10 баллов
+
++10 - контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, тянется во всю ширину страницы
+
+- вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется
+
++5 (выполнено частично) есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным
+
++10 - на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt
+
++10 - контакты для связи и перечень навыков оформлены в виде списка ul > li
+
++10 - CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского
+
++10 - CV содержит пример кода с подсветкой кода
+
++10 - CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий
+
++10 - CV выполнено на английском языке
+
++10 - выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка
+
+- есть видеорезюме автора CV на английском языке. Видеорезюме встраивается в страницу CV как видео, а не в виде кнопки или ссылки. Продолжительность видео 3-5 минут (±15 секунд). В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке (например, в документе Google Docs)
+
++10 - дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию` );
+    </script>
   </body>
 </html>
