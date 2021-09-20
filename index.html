@@ -1,29 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
   <head>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Ivan Kuritsyn</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
   </head>
 
-  <body>
-    <main class="container">
+  <body class="body">
+    <header class="header_container">
+      <nav class="main_menu">
+        <ul>
+          <li><a class="decorate-link" href="#summary">Summary</a></li>
+          <li><a class="decorate-link" href="#technical_skills">Technical Skills</a></li>
+          <li><a class="decorate-link" href="#soft_skills">Soft Skills</a></li>
+          <li><a class="decorate-link" href="#code_example">Code Example</a></li>
+          <li><a class="decorate-link" href="#contacts">Contacts</a></li>
+          <li><a class="decorate-link" href="#education">Education</a></li>
+          <li><a class="decorate-link" href="#social_media">Social Media</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main_container">
       <div class="left-block">
         <section class="name">
-          <h2>IVAN KURITSYN</h2>
-          <h3>JavaScript Developer</h3>
+          <h1>IVAN<br>KURITSYN</h1>
+          <h3>Frontend Developer</h3>
         </section>
-        <section class="summary">
+        <section class="summary" id="summary">
           <h2>Summary</h2>
-          <p style="text-align: justify;">
+          <p>
             My goal is to change profession and become a software developer. I took
             online courses on the platforms Stepik, Hexlet, Skillfactory, RS School.
             There is no work experience, but there is a great desire to learn and
             develop in the field of programming and IT technologies.
           </p>
         </section>
-        <section class="technical_skills">
+        <section class="technical_skills" id="technical_skills">
           <h2>Technical Skills</h2>
           <ul>
             <li><b>Platforms:</b> Windows, Linux (Ubuntu)</li>
@@ -32,30 +51,53 @@
             <li><b>VSC:</b> Git</li>
           </ul>
         </section>
-        <section class="soft_skills">
+        <section class="soft_skills" id="soft_skills">
           <h2>Soft Skills</h2>
-          <p style="text-align: justify;">
+          <p>
             I am a purposeful, responsible, sociable person. I have teamwork skills.
             I use to work for like a head of building design department.
           </p>
+        </section>
+        <section class="code_example" id="code_example">
+          <h2>Code Example</h2>
+          <p>Imagine you and your friends decide to create a dream team. This team should have a cool secret name that contains encrypted information about it. For example, the first letters of the names of its members in upper case sorted alphabetically.Implement the createDreamTeam(members) function that returns name of a newly made team (string) based on the names of its members (Array). Names of the members should be strings. In case of wrong members type function must return false. Team member name may contain whitespaces.</p>
+          <pre>
+            <code>
+function createDreamTeam(members) {
+  if (!Array.isArray(members)) return false;
+  let arrName = [];
+  members.forEach(item => {
+    typeof item == 'string' ? arrName.push(item.trim().toUpperCase()) : false;
+  })
+  arrName.sort();
+  let dreamTeamName = '';
+  for (let i = 0; i < arrName.length; i++) {
+    if (typeof arrName[i] === 'string') dreamTeamName += arrName[i][0];
+  }
+  return dreamTeamName;
+}
+            </code>
+          </pre>
         </section>
       </div>
 
       <div class="right-block">
         <figure class="avatar">
-          <img src="Avatar.jpg" alt="Photo Kuritsyn Ivan" height="425">
+          <img src="Avatar.jpg" alt="Photo Kuritsyn Ivan" height="435">
           <figcaption><b>Date of birth:</b> 22th November 1982</figcaption>
         </figure>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <h2>Contacts</h2>
           <ul>
-            <li><b>Phone number:</b> +7 (926) 8185066</li>
-            <li><b>Email:</b> L75x5@yandex.ru</li>
-            <li><b>Skype:</b> ivroller</li>
+            <li><b>Phone number:</b> <a href="tel:+79268185066">+7(926)818-50-66</a></li>
+            <li><b>Email:</b> <a href="mailto:l75x5@yandex.ru">L75x5@yandex.ru</a></li>
+            <li><b>Telegram:</b> <a href="https://t.me/ivan_nesusanin">@ivan_nesusanin</a></li>
+            <li><b>Skype:</b> <a href="skype:ivroller">ivroller</a></li>
+            <li><b>Discord:</b> ivan-nesusanin #4211</li>
           </ul>
           <p><b>Address:</b> Sochi, Russia</p>
         </section>
-        <section class="education">
+        <section class="education" id="education">
           <h2>Education</h2>
           <p><b>Ivanovo State University of Architecture and Engineering</b></p>
           <ul>
@@ -65,26 +107,27 @@
           </ul>
           <p><b>English - A2</b> (Pre-Intermediate)</p>
         </section>
-        <section class="social_media">
+        <section class="social_media" id="social_media">
           <h2>Social Media</h2>
           <ul>
-            <li><b>Instagram:</b> ivan_nesusanin</li>
-            <li><b>VK:</b> id7291384</li>
+            <li><b>Instagram:</b> <a href="https://www.instagram.com/ivan_nesusanin">ivan_nesusanin</a></li>
+            <li><b>VK:</b> <a href="https://vk.com/id7291384">Иван Курицын</a></li>
           </ul>
         </section>
       </div>
     </main>
 
-    <footer class="footer_contain">
-      <div class="item-1">
-        <a href="https://github.com/ivan-nesusanin" target="_blank">Link to GitHub</a>
-        <a href="https://rs.school/js/" target="_blank">Link to course RS School</a>
-        <p style="color: #DCDCDC; font-weight: lighter; font-size: 14px; letter-spacing: 12px;">2021</p>
-      </div>
-      <div class="item-2">
-        <img src="https://rs.school/images/rs_school_js.svg" alt="logo RS School" height="50">
-      </div>
+    <footer class="footer">
+      <section class="footer_container">
+        <div class="item-1">
+          <a href="https://github.com/ivan-nesusanin" target="_blank">Link to GitHub</a>
+          <a href="https://rs.school/js/" target="_blank">Link to course RS School</a>
+          <p style="color: #DCDCDC; font-weight: lighter; font-size: 14px; letter-spacing: 12px;">2021</p>
+        </div>
+        <div class="item-2">
+          <img src="https://rs.school/images/rs_school_js.svg" alt="logo RS School" height="50">
+        </div>
+      </section>
     </footer>
-
   </body>
 </html>
