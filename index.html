@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
     <meta charset="UTF-8" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <meta name="viewport" content="width=1170" />
@@ -15,12 +18,17 @@
         <ul>
           <li><a class="decorate-link" href="#summary">Summary</a></li>
           <li><a class="decorate-link" href="#soft_skills">Soft Skills</a></li>
-          <li><a class="decorate-link" href="#code_example">Code Example</a></li>
           <li><a class="decorate-link" href="#projects">Projects</a></li>
-          <li><a class="decorate-link" href="#technical_skills">Technical Skills</a></li>
+          <li>
+            <a class="decorate-link" href="#technical_skills"
+              >Technical Skills</a
+            >
+          </li>
           <li><a class="decorate-link" href="#education">Education</a></li>
           <li><a class="decorate-link" href="#contacts">Contacts</a></li>
-          <li><a class="decorate-link" href="#social_media">Social Media</a></li>
+          <li>
+            <a class="decorate-link" href="#social_media">Social Media</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -28,64 +36,149 @@
     <main class="main_container">
       <div class="left-block">
         <section class="name">
-          <h1>IVAN<br>KURITSYN</h1>
+          <h1>IVAN<br />KURITSYN</h1>
           <h3>Frontend Developer</h3>
         </section>
         <section class="summary" id="summary">
           <h2>Summary</h2>
           <p>
-            My goal is to change profession and become a software developer. I took
-            online courses on the platforms Stepik, Hexlet, Skillfactory, RS School.
-            There is no work experience, but there is a great desire to learn and
-            develop in the field of programming and IT technologies.
+            My goal is to change profession and become a software developer. I
+            took online courses on the platforms Stepik, Hexlet, Skillfactory,
+            RS School. There is no work experience, but there is a great desire
+            to learn and develop in the field of programming and IT
+            technologies.
           </p>
         </section>
         <section class="soft_skills" id="soft_skills">
           <h2>Soft Skills</h2>
           <p>
-            I am a purposeful, responsible, sociable person. I have teamwork skills.
-            I use to work for like a head of building design department.
+            I am a purposeful, responsible, sociable person. I have teamwork
+            skills. I use to work for like a head of building design department.
           </p>
-        </section>
-        <section class="code_example" id="code_example">
-          <h2>Code Example</h2>
-          <p>Task <a href="https://github.com/AlreadyBored/basic-js" target="_blank">Dream team</a></p>
-          <p>Implement the createDreamTeam(members) function that returns name of a newly made team (string) based on the first letters of the names of its members (Array) in upper case sorted alphabetically. Names of the members should be strings. In case of wrong members type function must return false. Team member name may contain whitespaces.</p>
-          <pre>
-            <code class="language-css">
-function createDreamTeam(members) {
-  if (!Array.isArray(members)) return false;
-  let arrName = [];
-  members.forEach(item => {
-    typeof item == 'string' ? arrName.push(item.trim().toUpperCase()) : false;
-  })
-  arrName.sort();
-  let dreamTeamName = '';
-  for (let i = 0; i&lt;arrName.length; i++) {
-    if (typeof arrName[i] === 'string') dreamTeamName += arrName[i][0];
-  }
-  return dreamTeamName;
-}
-            </code>
-          </pre>
         </section>
         <section class="projects" id="projects">
           <h2>Projects</h2>
-          <p>I don't have any major work projects at the moment. Below are examples of small training projects: Vertical slider and Custom video player.</p>
+          <p>
+            At the moment I have no experience in commercial development. Below
+            are a few training projects
+          </p>
           <div class="projects_container">
             <div class="img_link">
-              <a href="https://rolling-scopes-school.github.io/ivan-nesusanin-JSFEPRESCHOOL/js30-vertical-slider" target="_blank">
-                <img src="./Assets/vertical-slider.jpg" alt="Vertical slider" width="320">
-                <span>
-                  During the study of JavaScript, a Vertical Slider was made with photos of beautiful places in the vicinity of Krasnaya Polyana. The project was executed in a pure language, without the use of frameworks. The slider is built on flexboxes.
+              <a
+                href="https://rolling-scopes-school.github.io/ivan-nesusanin-JSFEPRESCHOOL/js30-vertical-slider"
+                target="_blank"
+              >
+                <img
+                  src="./Assets/vertical-slider.jpg"
+                  alt="Vertical slider"
+                  width="100%"
+                />
+                <span class="description">
+                  During the study of JavaScript, a Vertical Slider was made
+                  with photos of beautiful places in the vicinity of Krasnaya
+                  Polyana. The project was executed in a pure language, without
+                  the use of frameworks. The slider is built on flexboxes.
                 </span>
               </a>
             </div>
             <div class="img_link">
-              <a href="https://rolling-scopes-school.github.io/ivan-nesusanin-JSFEPRESCHOOL/custom-video-player" target="_blank">
-                <img src="./Assets/custom-video-player.jpg" alt="Custom Video Player" width="320">
-                <span>
-                  The second project is a Custom Video Player. The project is also executed without the use of frameworks and libraries.
+              <a href="https://clone-momentum.netlify.app/" target="_blank">
+                <img
+                  src="./Assets/momentum.JPG"
+                  alt="Momentum Clone"
+                  ~
+                  width="100%"
+                />
+                <span class="description">
+                  Momentum is an analogue of the Chrome Web Store application of
+                  the same name. The application shows the time and username.
+                  The background image and greeting changes depending on the
+                  time of day. The app has a clock, an image slider, weather
+                  widgets, an audio player, a quote of the day block, and
+                  settings. Local storage is used to store the username and
+                  location. The required functionality is partially implemented.
+                </span>
+              </a>
+            </div>
+            <div class="img_link">
+              <a href="https://css-memslider.netlify.app/" target="_blank">
+                <img
+                  src="./Assets/mem-slider.JPG"
+                  alt="Mem Slider"
+                  width="100%"
+                />
+                <span class="description">
+                  A small meme slider created without using JavaScript.
+                </span>
+              </a>
+            </div>
+            <div class="img_link">
+              <a href="https://art-victorina.netlify.app/" target="_blank">
+                <img src="./Assets/art-quiz.JPG" alt="Art Quiz" width="100%" />
+                <span class="description">
+                  ArtQuiz is a quiz application for knowledge of masterpieces of
+                  painting and their authors. The first experience of creating a
+                  single-page application (SPA). The required functionality is
+                  partially implemented.
+                </span>
+              </a>
+            </div>
+            <div class="img_link">
+              <a
+                href="https://ivan-nesusanin-christmas-task.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  src="./Assets/christmas-tree.JPG"
+                  alt="Christmas Tree"
+                  width="100%"
+                />
+                <span class="description">
+                  New Year's SPA application that will allow you to sort
+                  Christmas toys by name and number of copies, find a toy by
+                  name, group toys by type, add toys to favorites and remove
+                  from it, as well as with an interactive page where you can
+                  decorate the Christmas tree with the selected toys. The
+                  required functionality is partially implemented.
+                </span>
+              </a>
+            </div>
+            <div class="img_link">
+              <a href="https://rs-kp.herokuapp.com/" target="_blank">
+                <img
+                  src="./Assets/kinopoisk.JPG"
+                  alt="Kinopoisk Clone"
+                  width="100%"
+                />
+              </a>
+              <span class="description">
+                Simplified analogue of the site Kinopoisk. The intended
+                functionality is partially implemented. An overview of the
+                application can be viewed at
+                <a
+                  class="link"
+                  href="https://youtu.be/l9Yd8aZGBvQ"
+                  target="_blank"
+                  >the link on YouTube</a
+                >, you can read about the project and development progress in
+                <a
+                  class="link"
+                  href="https://medium.com/@ivanku82/rs-clone-kinopoisk-учебный-проект-7046c37e4d2f"
+                  target="_blank"
+                  >the article on Medium.
+                </a>
+              </span>
+            </div>
+            <div class="img_link">
+              <a href="https://ytb-client.netlify.app/auth" target="_blank">
+                <img
+                  src="./Assets/youtube-client.JPG"
+                  alt="YouTube Client"
+                  width="100%"
+                />
+                <span class="description">
+                  An application that works with the YouTube API. Currently
+                  being finalized.
                 </span>
               </a>
             </div>
@@ -95,16 +188,23 @@ function createDreamTeam(members) {
 
       <div class="right-block">
         <figure class="avatar">
-          <img src="./Assets/Avatar.jpg" alt="Photo Kuritsyn Ivan" width="320">
+          <img
+            src="./Assets/Avatar.jpg"
+            alt="Photo Kuritsyn Ivan"
+            width="340"
+          />
           <figcaption><b>Date of birth:</b> 22th November 1982</figcaption>
         </figure>
         <section class="technical_skills" id="technical_skills">
           <h2>Technical Skills</h2>
           <ul>
-            <li><b>Platforms:</b> Windows, Linux (Ubuntu)</li>
-            <li><b>Languages:</b> JavaScript, HTML5, CSS3, Python (basic)</li>
-            <li><b>IDE:</b> VS Code, Jupiter Notebook, PyCharm</li>
+            <li><b>Languages:</b> JavaScript, TypeScript, HTML, CSS</li>
+            <li><b>Frameworks:</b> Angular</li>
+            <li><b>Libraries:</b> Bootstrap, Angular Material</li>
+            <li><b>Preprocessors:</b> SCSS, SASS</li>
+            <li><b>IDE:</b> VS Code</li>
             <li><b>VSC:</b> Git</li>
+            <li><b>Other:</b> Webpack, RxJS, Prettier, ESLint, Figma</li>
           </ul>
         </section>
         <section class="education" id="education">
@@ -120,9 +220,19 @@ function createDreamTeam(members) {
         <section class="contacts" id="contacts">
           <h2>Contacts</h2>
           <ul>
-            <li><b>Phone number:</b> <a href="tel:+79268185066">+7(926)818-50-66</a></li>
-            <li><b>Email:</b> <a href="mailto:l75x5@yandex.ru">L75x5@yandex.ru</a></li>
-            <li><b>Telegram:</b> <a href="https://t.me/ivan_nesusanin" target="_blank">@ivan_nesusanin</a></li>
+            <li>
+              <b>Phone number:</b>
+              <a href="tel:+79268185066">+7(926)818-50-66</a>
+            </li>
+            <li>
+              <b>Email:</b> <a href="mailto:l75x5@yandex.ru">L75x5@yandex.ru</a>
+            </li>
+            <li>
+              <b>Telegram:</b>
+              <a href="https://t.me/ivan_nesusanin" target="_blank"
+                >@ivan_nesusanin</a
+              >
+            </li>
             <li><b>Skype:</b> <a href="skype:ivroller">ivroller</a></li>
             <li><b>Discord:</b> ivan-nesusanin #4211</li>
           </ul>
@@ -131,8 +241,18 @@ function createDreamTeam(members) {
         <section class="social_media" id="social_media">
           <h2>Social Media</h2>
           <ul>
-            <li><b>Instagram:</b> <a href="https://www.instagram.com/ivan_nesusanin" target="_blank">ivan_nesusanin</a></li>
-            <li><b>VK:</b> <a href="https://vk.com/id7291384" target="_blank">Иван Курицын</a></li>
+            <li>
+              <b>Instagram:</b>
+              <a href="https://www.instagram.com/ivan_nesusanin" target="_blank"
+                >ivan_nesusanin</a
+              >
+            </li>
+            <li>
+              <b>VK:</b>
+              <a href="https://vk.com/id7291384" target="_blank"
+                >Иван Курицын</a
+              >
+            </li>
           </ul>
         </section>
       </div>
@@ -141,51 +261,39 @@ function createDreamTeam(members) {
     <footer class="footer">
       <div class="footer_container">
         <div class="item-1">
-          <a href="https://github.com/ivan-nesusanin" target="_blank">Link to GitHub</a>
-          <a href="https://rs.school/js/" target="_blank">Link to course RS School</a>
-          <p style="color: #DCDCDC; font-weight: lighter; font-size: 14px; letter-spacing: 12px;">2021</p>
+          <a
+            href="https://github.com/ivan-nesusanin"
+            target="_blank"
+            style="display: block"
+            >Link to GitHub</a
+          >
+          <a href="https://rs.school/js/" target="_blank" style="display: block"
+            >Link to course RS School</a
+          >
+          <p
+            style="
+              color: #dcdcdc;
+              font-weight: lighter;
+              font-size: 14px;
+              letter-spacing: 12px;
+            "
+          >
+            2021
+          </p>
         </div>
         <div class="item-2">
-          <img src="https://rs.school/images/rs_school_js.svg" alt="logo RS School" height="50">
+          <img
+            src="https://rs.school/images/rs_school_js.svg"
+            alt="logo RS School"
+            height="50"
+          />
         </div>
       </div>
     </footer>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script> console.log (
-`Общий балл - 150
-
-+10 - вёрстка валидная
-Надпись "Document checking completed. No errors or warnings to show."
-
-+20 - вёрстка семантическая
-В коде страницы присутствуют семантические теги HTML5: figure, figcaption, footer, header, main, nav, section. Используются заголовки h1-h3. Заголовок h1 только один. 2 балла за каждый уникальный семантический тег HTML5 и за каждый уникальный заголовок h1-h3
-
-+10 - для оформления СV используются css-стили
-1 балл за каждый стилизованный элемент, но не больше 10 баллов
-
-+10 - контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, тянется во всю ширину страницы
-
-+10 - вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется
-
-+10 - есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным
-
-+10 - на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt
-
-+10 - контакты для связи и перечень навыков оформлены в виде списка ul > li
-
-+10 - CV содержит контакты для связи, краткую информацию о себе, перечень навыков, информацию об образовании и уровне английского
-
-+10 - CV содержит пример кода с подсветкой кода
-
-+10 - CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий
-
-+10 - CV выполнено на английском языке
-
-+10 - выполнены требования к Pull Request: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, выполнена самооценка
-
-+10 - дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию` );
+    <script>
+      hljs.initHighlightingOnLoad();
     </script>
   </body>
 </html>
