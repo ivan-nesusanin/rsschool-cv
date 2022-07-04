@@ -56,20 +56,15 @@
   padding: 60px 30px 0;
 }
 
-.summary, .soft_skills, .code_example, .projects {
+.summary, .soft_skills, .projects {
   position: relative;
   top: 80px;
 }
 
-.summary p, .soft_skills p, .code_example p, .projects p {
+.summary p, .soft_skills p, .projects p {
   border-left:5px solid #8c8b91;
   padding: 20px;
   margin-top: -25px;
-}
-
-.code_example a {
-  display: inline-block;
-  color: #2F4F4F;
 }
 
 .projects {
