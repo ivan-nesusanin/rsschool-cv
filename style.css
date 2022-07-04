@@ -18,7 +18,7 @@
 .main_menu ul {
   display: flex;
   align-items: center;
-  max-width: 1280px;
+  max-width: 1440px;
 }
 
 .main_menu li {
@@ -27,7 +27,7 @@
 }
 
 .decorate-link {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
@@ -38,17 +38,14 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1440px;
   background-color:#8c8b91;
 }
 
 .left-block {
   display: flex;
   flex-direction: column;
-  max-width: 73%;
-  min-width: 320px;
-  padding: 50px;
-  padding-top: 20px;
+  padding: 20px 50px;
   font-size: 20px;
   border-left: 10px solid #2F4F4F;
   background-color:#DCDCDC;
@@ -77,25 +74,24 @@
 
 .projects {
   position: relative;
-  top: 35px;
 }
 
 .projects_container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 70px;
+  gap: 10px 20px;
 }
 
 .img_link {
-  display: block;
-  width: 400px;
-  height: 400px;
+  width:380px;
   text-align: center;
 }
 
 .right-block {
   display: flex;
   flex-direction: column;
-  max-width: 27%;
-  min-width: 320px;
   padding: 30px;
   border-right: 10px solid #2F4F4F;
   background-color: #8c8b91;
@@ -193,8 +189,6 @@ p {
 
 a {
   color: #DCDCDC;
-  display: block;
-  height: 30px;
   font-size: 20px;
   letter-spacing: 1px;
 }
@@ -210,8 +204,8 @@ pre {
 }
 
 span {
-  display: inline-block;
-  margin: 0 10px;
+  display: block;
+  margin: 15px 0;
   font-size: 18px;
   letter-spacing: 0;
   line-height: 27px;
@@ -219,10 +213,23 @@ span {
   color: #2F4F4F;
 }
 
+.description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #2F4F4F;
+  text-align: justify;
+}
+
+.link {
+  font-size: 16px;
+  color: #000080;
+}
+
 @media screen and (max-width: 1140px) {
 
   .projects_container {
     flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 860px) {
