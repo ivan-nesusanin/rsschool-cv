@@ -53,12 +53,7 @@
 }
 
 .name {
-  padding: 60px 30px 0;
-}
-
-.summary, .soft_skills, .projects {
-  position: relative;
-  top: 80px;
+  padding: 55px 30px 50px;
 }
 
 .summary p, .soft_skills p, .projects p {
@@ -67,15 +62,10 @@
   margin-top: -25px;
 }
 
-.projects {
-  position: relative;
-}
-
 .projects_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 70px;
   gap: 10px 30px;
 }
 
