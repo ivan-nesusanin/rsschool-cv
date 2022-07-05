@@ -1,1 +1,0 @@
-https://ivan-nesusanin.github.io/rsschool-cv/
